@@ -14,3 +14,5 @@ strict-rfc3339==0.7
 swagger-spec-validator==2.0.2
 uWSGI==2.0.14
 Werkzeug==0.11.11
+beautifulsoup4==4.5.3
+bs4==0.0.1
