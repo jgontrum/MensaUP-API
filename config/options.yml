@@ -1,0 +1,48 @@
+mensas:
+  golm:
+    url: http://www.studentenwerk-potsdam.de/mensa-golm.html
+    uni: Uni Potsdam
+    mensa: Mensa Golm
+  griebnitzsee:
+    url: http://www.studentenwerk-potsdam.de/de/mensa-griebnitzsee.html
+    uni: Uni Potsdam
+    mensa: Mensa Griebnitzsee
+  neuespalais:
+    url: http://www.studentenwerk-potsdam.de/mensa-am-neuen-palais.html
+    uni: Uni Potsdam
+    mensa: Mensa am Neuen Palais
+ingredientsMapping:
+  "1": colouring
+  "2": preservative
+  "3": antioxidant
+  "4": flavour_enhancer
+  "5": sulfur
+  "6": blackened
+  "7": waxed
+  "8": phosphate
+  "9": sweetener
+  "11": aspartam
+  "13": lactoprotein
+  "14": egg_white
+  "20": quinine
+  "21": caffeine
+  "22": milk_powder
+  "23": whey_powder
+  "KF": cocoa
+  "TL": rennet
+  "AL": alcohol
+  "GE": gelatin
+  "A": gluten
+  "B": crustaceans
+  "C": eggs
+  "D": fish
+  "E": peanuts
+  "F": soy
+  "G": milk
+  "H": edible_nuts
+  "I": celeriac
+  "J": mustard
+  "K": sesame
+  "L": sulfite
+  "M": lupin
+  "N": molluscs

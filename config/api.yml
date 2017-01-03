@@ -1,0 +1,62 @@
+swagger: '2.0'
+info:
+  title: MensaUP API
+  version: "0.1"
+consumes:
+  - application/json
+produces:
+  - application/json
+basePath: /api
+paths:
+  '/mensa/{mensa}/all':
+    get:
+      # The operationId is the path to the python function to be called.
+      operationId: mensaup_api.api.mensa.all.get
+      summary: Get all current offers from this mensa.
+      responses:
+        200: # If we return with a 200 status code...
+          description: Returns a list of meals.
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Meal'
+        500:
+          description: Server Error
+          schema:
+            type: string
+      parameters:
+        - name: mensa
+          in: path
+          required: true
+          type: string
+definitions:
+  Meal:
+    type: object
+    required:
+      - text
+      - category
+      - ingredients
+      - diets
+    properties:
+      text:
+        type: string
+        description: The description of the meal.
+        example: Hefeklöße mit heißen Früchten
+      category:
+        type: string
+        description: The category of this meal.
+        example: Angebot 1
+      ingredients:
+        type: array
+        description: A list of ingredients.
+        items:
+          type: string
+          description: The english name of an ingredient.
+          example: caffeine
+      diets:
+        type: array
+        description: A list of diets that are conform with this meal.
+        items:
+          type: string
+          description: The english name of a diet.
+          example: vegan
